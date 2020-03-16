@@ -1,1 +1,7 @@
 <p>footer works!</p>
+<div class="rss">
+  <section class="ticker" *ngFor="let item of feed.items; index as i">
+    <p class="headline">{{ item.title }}</p>
+    <p class="url">{{ item.link }}</p>
+  </section>
+</div>
