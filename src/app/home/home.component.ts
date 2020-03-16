@@ -7,27 +7,19 @@ import { NASAService } from '../nasa.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  pictureOfTheDay: any;
   constructor(private service: NASAService) { }
 
   ngOnInit(): void {
-
+    this.getPictureOfTheDay();
   }
 
-
-  getData(): any {
-
-    this.service.getData().subscribe(response => {
-
+  getPictureOfTheDay() {
+    this.service.getPictureOfTheDay().subscribe(response => {
       console.log(response);
-
-    },
-
-      (error) => { console.log(error); })
-
+      this.pictureOfTheDay = response;
+    })
   }
-
-
 
 }
 

@@ -12,9 +12,14 @@ export class NASAService {
 
 
 
-  getData() {
-    return this.http.get(`https://api.nasa.gov/planetary/apod?api_Key${this.api_key}&date=${this.date}&hd=${this.hd}`)
-
+  getPictureOfTheDay() {
+    return this.http.get(`https://api.nasa.gov/planetary/apod`, {
+      params: {
+        api_key: this.api_key,
+        date: this.date,
+        hd: `${this.hd}`
+      }
+    })
   }
 
 }
