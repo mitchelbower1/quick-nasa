@@ -1,0 +1,136 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 70px;
+  align-items: center;
+  width: 100%;
+  font-family: "Righteous";
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fc3d21;
+}
+button:hover {
+  background-color: #fc3d21;
+  color: red;
+}
+ul {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #0b3d91; */
+}
+h1 {
+  color: #fc3d21;
+}
+
+.mobile {
+  size: 50px;
+  background-color: #0b3d91;
+  border: none;
+  padding: 5px;
+}
+.love {
+  display: flex;
+  flex-direction: column;
+}
+.fa-bars {
+  background-color: #0b3d91;
+  color: #fc3d21;
+  font-size: 20px;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b3d91;
+  z-index: 99;
+  width: 100%;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.demo .large-header {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 50px;
+    height: 70px;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: #fc3d21;
+  }
+  .button {
+    margin: 5px;
+    border-radius: 10px;
+    display: initial;
+  }
+  #dropdown {
+    display: none;
+  }
+  .container {
+    background-color: #0b3d91;
+  }
+  h1 {
+    color: #fc3d21;
+  }
+  ul {
+    display: initial;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .test {
+    display: none;
+  }
+  .demo .main-title {
+    font-size: 3em;
+  }
+}
