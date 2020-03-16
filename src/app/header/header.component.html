@@ -1,1 +1,33 @@
-<p>header works!</p>
+<div class="container">
+  <div class="container demo">
+    <div class="content">
+      <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar">
+    <div class="header">
+      <h3>
+        <p>
+          <a routerLink="/home" class="button">ALT NASA</a>
+        </p>
+      </h3>
+      <ul class="main-nav">
+        <a routerLink="/home" class="button">HOME</a>
+        <a routerLink="/neo" class="button">NEO</a>
+        <a routerLink="/news" class="button">NEWS </a>
+        <a routerLink="/tech-transfer" class="button">TECH-TRANSFER</a>
+      </ul>
+      <button class="mobile" (click)="toggle()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div *ngIf="!showNav" class="test">
+      <a routerLink="/home" class="button">HOME</a>
+      <a routerLink="/neo" class="button">NEO</a>
+      <a routerLink="/news" class="button">NEWS </a>
+      <a routerLink="/tech-transfer" class="button">TECH-TRANSFER</a>
+    </div>
+  </nav>
+</div>

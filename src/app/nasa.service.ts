@@ -1,16 +1,14 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http"
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class NASAService {
   api_key: string = "AEuFemlzD3eAHquMz4vhphthx6oLpSu9QmiOMoex";
   hd: boolean = false;
-  date: string = "2020-03-15"
-  constructor(private http: HttpClient) { }
-
-
+  date: string = "2020-03-15";
+  constructor(private http: HttpClient) {}
 
   getPictureOfTheDay() {
     return this.http.get(`https://api.nasa.gov/planetary/apod`, {
@@ -19,9 +17,14 @@ export class NASAService {
         date: this.date,
         hd: `${this.hd}`
       }
-    })
+    });
   }
-
+  myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 }
-
-
