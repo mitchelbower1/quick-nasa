@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NASAService } from '../nasa.service';
 
 @Component({
   selector: 'app-tech-transfer',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TechTransferComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: NASAService) { }
 
   ngOnInit(): void {
+    this.getTechTransfer();
   }
-
+  getTechTransfer() {
+    this.service.getTechTransfer().subscribe(response => {
+      console.log(response);
+    })
+  }
 }
