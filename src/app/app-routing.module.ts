@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: "head", component: HeaderComponent },
   { path: "news", component: NewsComponent },
   { path: "near-earth-objects", component: NeoComponent },
-  { path: "tech-Transfer", component: TechTransferComponent },
+  { path: "tech-transfer", component: TechTransferComponent },
   { path: "footer", component: FooterComponent }
 ];
 
