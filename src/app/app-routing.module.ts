@@ -6,7 +6,6 @@ import { HomeComponent } from "./home/home.component";
 import { NeoComponent } from "./neo/neo.component";
 import { NewsComponent } from "./news/news.component";
 import { TechTransferComponent } from "./tech-transfer/tech-transfer.component";
-
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
@@ -14,7 +13,7 @@ const routes: Routes = [
   { path: "news", component: NewsComponent },
   { path: "near-earth-objects", component: NeoComponent },
   { path: "tech-transfer", component: TechTransferComponent },
-  { path: "footer", component: FooterComponent }
+  { path: "footer", component: FooterComponent },
 ];
 
 @NgModule({

@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     NewsComponent,
     NeoComponent,
     TechTransferComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
