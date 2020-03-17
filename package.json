@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~9.0.1",
     "@angular/platform-browser-dynamic": "~9.0.1",
     "@angular/router": "~9.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "rss-parser": "^3.7.5",
     "rss-to-json": "^1.0.5",
     "rxjs": "~6.5.4",
