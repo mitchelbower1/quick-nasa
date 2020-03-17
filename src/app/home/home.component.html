@@ -1,6 +1,8 @@
 <app-header></app-header>
 
-<p>home works!</p>
-
+<div class="container">
+  <p>{{ pictureOfTheDay?.title }}</p>
+  <img [src]="pictureOfTheDay?.url" alt="pic" />
+</div>
 
 <app-footer></app-footer>

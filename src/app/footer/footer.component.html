@@ -1,7 +1,12 @@
 <div class="rss">
-  <section class="ticker" *ngFor="let item of feed.items; index as i">
-    <div class="card">
-    <p class="headline">{{ item.title }}</p>
+  <div class="card">
+    <section class="ticker" *ngFor="let item of feed.items; index as i">
+      <p class="headline">{{ item.title }}</p>
+    </section>
   </div>
-  </section>
+  <div class="card">
+    <section class="ticker" *ngFor="let item of feed.items; index as i">
+      <p class="headline">{{ item.title }}</p>
+    </section>
+  </div>
 </div>
