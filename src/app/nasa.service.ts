@@ -9,7 +9,7 @@ export class NASAService {
   hd: boolean = false;
   date: string = "";
 
-  patent: string = "";
+  patent: string = "patent";
   patent_issued: string = "";
   software: string = "";
 
@@ -27,6 +27,7 @@ export class NASAService {
       params: { rss_url: "https://www.nasa.gov/rss/dyn/earth.rss" }
     });
   }
+
   getPictureOfTheDay() {
     return this.http.get(`https://api.nasa.gov/planetary/apod`, {
       params: {
@@ -45,12 +46,10 @@ export class NASAService {
     });
   }
   getTechTransfer() {
-    return this.http.get(`https://api.nasa.gov/techtransfer`, {
+    return this.http.get(`https://api.nasa.gov/techtransfer/patent/`, {
       params: {
         api_key: this.api_key,
         patent: this.patent,
-        patent_issued: this.patent_issued,
-        software: this.software
       }
     });
   }
