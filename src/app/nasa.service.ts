@@ -7,7 +7,7 @@ import { HttpClient } from "@angular/common/http";
 export class NASAService {
   api_key: string = "AEuFemlzD3eAHquMz4vhphthx6oLpSu9QmiOMoex";
   hd: boolean = false;
-  date: string = "2020-03-15";
+  date: string = "";
 
   patent: string = "patent";
   patent_issued: string = "";
