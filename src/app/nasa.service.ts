@@ -8,9 +8,6 @@ export class NASAService {
   api_key: string = "AEuFemlzD3eAHquMz4vhphthx6oLpSu9QmiOMoex";
   hd: boolean = false;
   date: string = "2020-03-15";
-<<<<<<< HEAD
-  constructor(private http: HttpClient) {}
-=======
 
   patent: string = "";
   patent_issued: string = "";
@@ -21,7 +18,6 @@ export class NASAService {
   constructor(private http: HttpClient) { }
 
 
->>>>>>> 69227e35da2fb32f6c390c2681bc99357fc134cd
 
   getPictureOfTheDay() {
     return this.http.get(`https://api.nasa.gov/planetary/apod`, {
@@ -40,8 +36,6 @@ export class NASAService {
       x.className = "topnav";
     }
   }
-<<<<<<< HEAD
-=======
   getTechTransfer() {
     return this.http.get(`https://api.nasa.gov/techtransfer`, {
       params: {
@@ -59,5 +53,5 @@ export class NASAService {
       }
     })
   }
->>>>>>> 69227e35da2fb32f6c390c2681bc99357fc134cd
+
 }
