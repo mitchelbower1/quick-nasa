@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
+import { NgForm } from "@angular/forms";
 // import {Feed} from "rss-to-json"
 @Injectable({
   providedIn: "root"
@@ -49,8 +50,11 @@ export class NASAService {
     return this.http.get(`https://api.nasa.gov/techtransfer/patent/`, {
       params: {
         api_key: this.api_key,
-        patent: this.patent,
+        patent: this.patent
       }
     });
+    
   }
-}
+  
+
+  }
