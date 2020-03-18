@@ -1,14 +1,14 @@
 <app-header></app-header>
 <div class="container">
   <div class="wrapper">
-    <form #profileForm="ngForm" (ngSubmit)="update(profileForm)">
+    <form>
       <h2>Tech Transfer</h2>
       <label for="patent">Patent</label>
-      <input type="text" id="patent issued" name="patent issued" ngModel />
+      <input type="text" id="patent" name="patent issued" />
       <label for="patent issued">Patent Issued</label>
-      <input type="text" id="contact" name="contact" ngModel />
+      <input type="text" id="patent issued" name="contact" />
       <label for="software">Software</label>
-      <input type="text" id="software" name="software" ngModel />
+      <input type="text" id="software" name="software" />
       <button class="update">Search</button>
     </form>
   </div>

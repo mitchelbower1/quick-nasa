@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { NASAService } from "../nasa.service";
-import { NgForm } from "@angular/forms";
+// import { NgForm } from "@angular/forms";
 
 @Component({
   selector: "app-tech-transfer",
@@ -8,7 +8,7 @@ import { NgForm } from "@angular/forms";
   styleUrls: ["./tech-transfer.component.css"]
 })
 export class TechTransferComponent implements OnInit {
-  constructor(private service: NASAService) {}
+  constructor(private service: NASAService) { }
 
   ngOnInit(): void {
     this.getTechTransfer();
@@ -17,9 +17,9 @@ export class TechTransferComponent implements OnInit {
     this.service.getTechTransfer().subscribe(response => {
       console.log(response);
     });
-  
+
   }
-  getTech (form: NgForm ) {
-    
-  }
-  } 
+  // getTech (form: NgForm ) {
+
+  // }
+} 
