@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { NASAService } from '../nasa.service';
+import { Component, OnInit } from "@angular/core";
+import { NASAService } from "../nasa.service";
 
 @Component({
-  selector: 'app-neo',
-  templateUrl: './neo.component.html',
-  styleUrls: ['./neo.component.css']
+  selector: "app-neo",
+  templateUrl: "./neo.component.html",
+  styleUrls: ["./neo.component.css"]
 })
 export class NeoComponent implements OnInit {
-
-  constructor(private service: NASAService) { }
+  constructor(private service: NASAService) {}
 
   ngOnInit(): void {
     this.getNearEarthObjects();
@@ -17,6 +16,7 @@ export class NeoComponent implements OnInit {
   getNearEarthObjects() {
     this.service.getNearEarthObjects().subscribe(response => {
       console.log(response);
-    })
+    });
   }
 }
+git 
