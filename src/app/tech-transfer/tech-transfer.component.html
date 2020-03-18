@@ -1,1 +1,15 @@
 <p>tech-transfer works!</p>
+<div class="container">
+  <div class="wrapper">
+    <form #profileForm="ngForm" (ngSubmit)="update(profileForm)">
+      <h2>Tech Transfer</h2>
+      <label for="patent">Patent</label>
+      <input type="text" id="patent issued" name="patent issued" ngModel />
+      <label for="patent issued">Patent Issued</label>
+      <input type="text" id="contact" name="contact" ngModel />
+      <label for="software">Software</label>
+      <input type="text" id="software" name="software" ngModel />
+      <button class="update">Search</button>
+    </form>
+  </div>
+</div>
