@@ -1,11 +1,13 @@
 body {
   position: relative;
+  margin: 0;
 }
 
 .rss {
   position: relative;
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .card {
@@ -17,7 +19,7 @@ body {
   width: 235%;
   overflow: scroll;
   animation: ticker 20s linear infinite;
-  margin: 5px;
+  margin: 0;
   padding: 20px;
 }
 .headline {
@@ -27,7 +29,7 @@ body {
   width: 100%;
   color: white;
   font-size: 12px;
-  margin: 0px;
+  margin: 0;
   padding: 5px;
 }
 
@@ -40,6 +42,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 @keyframes ticker {

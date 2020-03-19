@@ -1,5 +1,6 @@
 body {
   background-color: black;
+  margin: 0;
 }
 .container {
   display: flex;
@@ -7,6 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
+  margin: 0;
 }
 
 img {
