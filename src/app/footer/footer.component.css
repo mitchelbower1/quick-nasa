@@ -1,28 +1,20 @@
 body {
-  /* height: 100px; */
   position: relative;
-  /* bottom: 100px; */
 }
 
 .rss {
   position: relative;
   display: flex;
   flex-direction: row;
-  bottom: 10px;
-  height: 100px;
 }
 
 .card {
   position: absolute;
   display: flex;
   flex-direction: row;
-  background-color: black;
+  background-color: #0b3d91;
   height: 50px;
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-  width: 100%;
-  position: absolute;
+  width: 235%;
   overflow: scroll;
   animation: ticker 20s linear infinite;
   margin: 5px;
@@ -46,16 +38,15 @@ body {
   width: 100vw;
   overflow: hidden;
   position: relative;
-  /* margin: 10px; */
   display: flex;
   flex-direction: row;
 }
 
-/* @keyframes ticker {
+@keyframes ticker {
   0% {
     left: 0;
   }
   100% {
     left: -100%;
   }
-} */
+}

@@ -1,12 +1,17 @@
+body {
+  width: 100%;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0 50px;
-  height: 70px;
+  padding-top: 0px;
+  padding: 30px;
+  height: 50px;
   align-items: center;
   width: 100%;
-  font-family: "Righteous";
+  font-family: "Play", sans-serif;
+  background-color: #0b3d91;
 }
 .header {
   display: flex;
@@ -17,32 +22,25 @@ a {
   text-decoration: none;
   color: #fc3d21;
 }
-button:hover {
-  background-color: #fc3d21;
-  color: red;
-}
+
 ul {
   display: none;
 }
 .container {
   display: flex;
   justify-content: space-between;
-  /* background-color: #0b3d91; */
+  align-items: baseline;
 }
 h1 {
   color: #fc3d21;
 }
 
 .mobile {
-  size: 50px;
+  /* size: 50px; */
   background-color: #0b3d91;
   border: none;
-  padding: 5px;
 }
-.love {
-  display: flex;
-  flex-direction: column;
-}
+
 .fa-bars {
   background-color: #0b3d91;
   color: #fc3d21;
@@ -52,6 +50,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: #0b3d91;
+  font-size: 24px;
   z-index: 99;
   width: 100%;
 }
@@ -63,7 +62,12 @@ h1 {
     flex-direction: row;
     padding: 0 50px;
     height: 70px;
-    align-items: center;
+    align-items: baseline;
+    background-color: #0b3d91;
+  }
+  .logo {
+    display: flex;
+    align-items: baseline;
   }
   a {
     text-decoration: none;
@@ -93,8 +97,5 @@ h1 {
 
   .test {
     display: none;
-  }
-  .demo .main-title {
-    font-size: 3em;
   }
 }
