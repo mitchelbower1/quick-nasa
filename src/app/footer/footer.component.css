@@ -18,7 +18,7 @@ body {
   overflow: scroll;
   animation: ticker 20s linear infinite;
   margin: 5px;
-  padding: 2px;
+  padding: 20px;
 }
 .headline {
   display: flex;
