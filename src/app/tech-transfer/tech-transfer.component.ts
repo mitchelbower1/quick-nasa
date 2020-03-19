@@ -8,18 +8,20 @@ import { NASAService } from "../nasa.service";
   styleUrls: ["./tech-transfer.component.css"]
 })
 export class TechTransferComponent implements OnInit {
-  constructor(private service: NASAService) { }
+  constructor(private service: NASAService) {}
 
   ngOnInit(): void {
-    this.getTechTransfer();
+    // this.getTechTransfer();
+    this.getTech();
   }
   getTechTransfer() {
     this.service.getTechTransfer().subscribe(response => {
       console.log(response);
     });
-
   }
-  // getTech (form: NgForm ) {
-
-  // }
-} 
+  getTech() {
+    this.service.getTech().subscribe(response => {
+      console.log(response);
+    });
+  }
+}

@@ -10,6 +10,7 @@ import { NeoComponent } from "./neo/neo.component";
 import { TechTransferComponent } from "./tech-transfer/tech-transfer.component";
 import { FooterComponent } from "./footer/footer.component";
 import { FormsModule } from "@angular/forms";
+import { PlanetsComponent } from './planets/planets.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from "@angular/forms";
     NewsComponent,
     NeoComponent,
     TechTransferComponent,
-    FooterComponent
+    FooterComponent,
+    PlanetsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
