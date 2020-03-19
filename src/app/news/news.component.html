@@ -1,1 +1,10 @@
-<p>news works!</p>
+
+
+<div class="main">
+    <h1>NASA NEWS</h1>
+    <div class="container" *ngFor="let item of feed.items;index as i">
+        <div class="title">{{item.title}}</div>
+        <div class="description">{{item.description}}</div>
+        <div class="link">{{item.link}}</div>
+    </div>
+</div>
