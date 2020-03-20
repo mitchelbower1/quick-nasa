@@ -7,15 +7,17 @@ import { NASAService } from "../nasa.service";
   styleUrls: ["./neo.component.css"]
 })
 export class NeoComponent implements OnInit {
-  constructor(private service: NASAService) {}
+  nearEarthObjects: any
+  constructor(private service: NASAService) { }
 
   ngOnInit(): void {
     this.getNearEarthObjects();
   }
 
+
   getNearEarthObjects() {
     this.service.getNearEarthObjects().subscribe(response => {
-      console.log(response);
+      this.nearEarthObjects = response;
     });
   }
 }

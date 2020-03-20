@@ -1,4 +1,4 @@
 <app-header></app-header>
-<p>{{ getNearEarthObjects }}</p>
+<p *ngFor="let neo of nearEarthObjects?.near_earth_objects">{{ neo.name }}</p>
 
 <app-footer></app-footer>
