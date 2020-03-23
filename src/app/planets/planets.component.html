@@ -3,6 +3,14 @@
   <div>
     <div *ngFor="let planet of planets; index as i">
       <img src="{{ planet.image }}" alt="" (click)="showPlanetInfo(i)" />
+      <p>{{ planet.name }}</p>
+      <p>{{ planet.planetType }}</p>
+      <p>{{ planet.size }}</p>
+      <p>{{ planet.orbit }}</p>
+      <p>{{ planet.surface }}</p>
+      <p>{{ planet.atmosphere }}</p>
+      <p>{{ planet.livability }}</p>
+      <p>{{ planet.moons }}</p>
     </div>
   </div>
 </main>
