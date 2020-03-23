@@ -1,4 +1,8 @@
 <app-header></app-header>
 <main>
-  <section></section>
+  <div>
+    <div *ngFor="let planet of planets; index as i">
+      <img src="{{ planet.image }}" alt="" (click)="showPlanetInfo(i)" />
+    </div>
+  </div>
 </main>

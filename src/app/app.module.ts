@@ -6,11 +6,10 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { HomeComponent } from "./home/home.component";
 import { NewsComponent } from "./news/news.component";
-import { NeoComponent } from "./neo/neo.component";
-import { TechTransferComponent } from "./tech-transfer/tech-transfer.component";
+import { EpicComponent } from "./epic/epic.component";
 import { FooterComponent } from "./footer/footer.component";
 import { FormsModule } from "@angular/forms";
-import { PlanetsComponent } from './planets/planets.component';
+import { PlanetsComponent } from "./planets/planets.component";
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { PlanetsComponent } from './planets/planets.component';
     HeaderComponent,
     HomeComponent,
     NewsComponent,
-    NeoComponent,
-    TechTransferComponent,
+    EpicComponent,
     FooterComponent,
     PlanetsComponent
   ],

@@ -39,29 +39,12 @@ export class NASAService {
     });
   }
 
-  getNearEarthObjects() {
-    return this.http.get(`https://api.nasa.gov/neo/rest/v1/neo/browse/`, {
+  getEpic() {
+    return this.http.get(`https://api.nasa.gov/EPIC/api/natural/images?`, {
       params: {
         api_key: this.api_key
       }
     });
   }
-  getRoverImages() {
-    return this.http.get(``)
-  }
-  getTechTransfer() {
-    return this.http.get(`https://api.nasa.gov/techtransfer/patent/`, {
-      params: {
-        api_key: this.api_key
-        // patent: this.patent,
-      }
-    });
-  }
-  getTech(tech: string = "rocket") {
-    return this.http.get(`https://api.nasa.gov/techtransfer/patent/?${tech}`, {
-      params: {
-        api_key: "AEuFemlzD3eAHquMz4vhphthx6oLpSu9QmiOMoex"
-      }
-    });
-  }
+
 }

@@ -3,24 +3,21 @@ import { Routes, RouterModule } from "@angular/router";
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { HomeComponent } from "./home/home.component";
-import { NeoComponent } from "./neo/neo.component";
+import { EpicComponent } from "./epic/epic.component";
 import { NewsComponent } from "./news/news.component";
-import { TechTransferComponent } from "./tech-transfer/tech-transfer.component";
-import { PlanetsComponent } from './planets/planets.component';
+import { PlanetsComponent } from "./planets/planets.component";
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "head", component: HeaderComponent },
   { path: "news", component: NewsComponent },
-  { path: "near-earth-objects", component: NeoComponent },
-  { path: "tech-transfer", component: TechTransferComponent },
+  { path: "epic", component: EpicComponent },
   { path: "footer", component: FooterComponent },
   { path: "planets", component: PlanetsComponent }
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
