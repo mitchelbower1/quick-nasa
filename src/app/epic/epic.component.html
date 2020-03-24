@@ -1,4 +1,7 @@
 <app-header></app-header>
-<p *ngFor="let item of epic; index as i">{{ epic.image }}</p>
+
+<div *ngFor="let image of images; index as i">
+    <img src="{{image.url}}" alt="">
+</div>
 
 <app-footer></app-footer>
