@@ -150,7 +150,7 @@ export class PlanetsComponent implements OnInit {
       livability: "Neptune cannot support life as we know it.",
       moons:
         "Neptune has 14 known moons which are named after sea gods and nymphs in Greek mythology.",
-      image: "../assets/uranus.png"
+      image: "../assets/neptune.png"
     }
   ];
 

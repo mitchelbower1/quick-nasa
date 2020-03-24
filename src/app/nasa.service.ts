@@ -16,7 +16,9 @@ export class NASAService {
 
   item: string = "";
   link: string = "";
-  constructor(private http: HttpClient) { }
+
+  images: any[] = [];
+  constructor(private http: HttpClient) {}
 
   //   rsFeed.load(baseUrl, function(err, rss){
   //     return this.http.get("https://www.nasa.gov/rss/dyn/earth.rss")
@@ -45,6 +47,8 @@ export class NASAService {
         api_key: this.api_key
       }
     });
+    
   }
-
+  
+ 
 }
