@@ -23,7 +23,8 @@ export class PlanetsComponent implements OnInit {
         "Mercury's thin atmosphere, or exosphere, is composed mostly of oxygen (O2), sodium (Na), hydrogen (H2), helium (He), and potassium (K). Atoms that are blasted off the surface by the solar wind and micrometeoroid impacts create Mercury's exosphere.",
       livability:
         "No evidence for life has been found on Mercury. Daytime Temperatures can reach 430 degrees Celsius (800 degrees Fahrenheit) and drop to -180 degrees Celsius (-290 degrees Fahrenheit) at night. It is unlikely life (as we know it) could survive on this planet.",
-      moons: "Mercury has no moons.", image: "../assets/mercury.jpg"
+      moons: "Mercury has no moons.",
+      image: "src/assets/mercury.png"
     },
     {
       name: "Venus",
@@ -40,7 +41,8 @@ export class PlanetsComponent implements OnInit {
         "While the surface rotates slowly, the winds blow at hurricane force, sending clouds completely around the planet every five days.",
       livability:
         "The planet’s surface temperature is about 900 degrees Fahrenheit (465 degrees Celsius)—hot enough to melt lead.",
-      moons: "Venus has no moons and no rings.", image: "../assets/mercury.jpg"
+      moons: "Venus has no moons and no rings.",
+      image: "src/assets/venus.png"
     },
     {
       name: "Earth",
@@ -56,7 +58,8 @@ export class PlanetsComponent implements OnInit {
       atmosphere:
         "Our atmosphere protects us from incoming meteoroids, most of which break up in our atmosphere before they can strike the surface.",
       livability: "Earth is the perfect place for life as we know it.",
-      moons: "Earth has one moon.", image: "../assets/mercury.jpg"
+      moons: "Earth has one moon.",
+      image: "src/assets/earth.png"
     },
     {
       name: "Mars",
@@ -73,7 +76,8 @@ export class PlanetsComponent implements OnInit {
         "Mars has a thin atmosphere made up mostly of carbon dioxide (CO2), argon (Ar), nitrogen (N2), and a small amount of oxygen and water vapor.",
       livability:
         "At this time, Mars' surface cannot support life as we know it. Current missions are determining Mars' past and future potential for life.",
-      moons: "Mars has two moons named Phobos and Deimos.", image: "../assets/mercury.jpg"
+      moons: "Mars has two moons named Phobos and Deimos.",
+      image: "src/assets/mars.png"
     },
     {
       name: "Jupiter",
@@ -90,7 +94,8 @@ export class PlanetsComponent implements OnInit {
         "Jupiter's atmosphere is made up mostly of hydrogen (H2) and helium (He).",
       livability:
         "Jupiter cannot support life as we know it. But some of Jupiter's moons have oceans beneath their crusts that might support life.",
-      moons: "Jupiter has more than 75 moons.", image: "../assets/mercury.jpg"
+      moons: "Jupiter has more than 75 moons.",
+      image: "src/assets/jupiter.png"
     },
     {
       name: "Saturn",
@@ -108,7 +113,8 @@ export class PlanetsComponent implements OnInit {
       livability:
         "Saturn cannot support life as we know it, but some of Saturn's moons have conditions that might support life.",
       moons:
-        "Saturn has 53 known moons with an additional 29 moons awaiting confirmation of their discovery—that is a total of 82 moons.", image: "../assets/mercury.jpg"
+        "Saturn has 53 known moons with an additional 29 moons awaiting confirmation of their discovery—that is a total of 82 moons.",
+      image: "../assets/mercury.jpg"
     },
     {
       name: "Uranus",
@@ -125,7 +131,8 @@ export class PlanetsComponent implements OnInit {
         "Uranus has an atmosphere made mostly of molecular hydrogen and atomic helium, with a small amount of methane.",
       livability: "Uranus cannot support life as we know it.",
       moons:
-        "Uranus has 27 known moons, and they are named after characters from the works of William Shakespeare and Alexander Pope.", image: "../assets/mercury.jpg"
+        "Uranus has 27 known moons, and they are named after characters from the works of William Shakespeare and Alexander Pope.",
+      image: "src/assets/uranus.png"
     },
     {
       name: "Neptune",
@@ -142,13 +149,14 @@ export class PlanetsComponent implements OnInit {
         "Neptune's atmosphere is made up mostly of molecular hydrogen, atomic helium and methane.",
       livability: "Neptune cannot support life as we know it.",
       moons:
-        "Neptune has 14 known moons which are named after sea gods and nymphs in Greek mythology.", image: "../assets/mercury.jpg"
+        "Neptune has 14 known moons which are named after sea gods and nymphs in Greek mythology.",
+      image: "src/assets/uranus.png"
     }
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 
   showPlanetInfo(index: number) {
     console.log(this.planets[index]);
