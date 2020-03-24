@@ -39,6 +39,7 @@ h1 {
   /* size: 50px; */
   background-color: #0b3d91;
   border: none;
+  height: fit-content;
 }
 
 .fa-bars {
@@ -52,7 +53,7 @@ h1 {
   background-color: #0b3d91;
   font-size: 24px;
   z-index: 99;
-  width: 100%;
+  width: 100vw;
 }
 
 @media only screen and (min-width: 768px) {

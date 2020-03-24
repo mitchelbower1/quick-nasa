@@ -21,7 +21,7 @@ h1 {
 .container {
   padding: 20px;
   margin: 20px;
-  background-color: #fc3d21;
+  background-color: black;
   border: 1px solid #0b3d91;
 }
 
@@ -32,7 +32,18 @@ h1 {
 }
 
 .description {
+  color: white;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-size: 18px;
+}
+a {
+  border-radius: 10px;
+  color: white;
+  background-color: #fc3d21;
+  padding: 10px;
+  font-family: "Play";
+  font-size: 18px;
+  border: none;
+  text-decoration: none;
 }
