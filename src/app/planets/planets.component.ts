@@ -24,7 +24,7 @@ export class PlanetsComponent implements OnInit {
       livability:
         "No evidence for life has been found on Mercury. Daytime Temperatures can reach 430 degrees Celsius (800 degrees Fahrenheit) and drop to -180 degrees Celsius (-290 degrees Fahrenheit) at night. It is unlikely life (as we know it) could survive on this planet.",
       moons: "Mercury has no moons.",
-      image: "src/assets/mercury.png"
+      image: "../assets/mercury.png"
     },
     {
       name: "Venus",
@@ -42,7 +42,7 @@ export class PlanetsComponent implements OnInit {
       livability:
         "The planet’s surface temperature is about 900 degrees Fahrenheit (465 degrees Celsius)—hot enough to melt lead.",
       moons: "Venus has no moons and no rings.",
-      image: "src/assets/venus.png"
+      image: "../assets/venus.png"
     },
     {
       name: "Earth",
@@ -59,7 +59,7 @@ export class PlanetsComponent implements OnInit {
         "Our atmosphere protects us from incoming meteoroids, most of which break up in our atmosphere before they can strike the surface.",
       livability: "Earth is the perfect place for life as we know it.",
       moons: "Earth has one moon.",
-      image: "src/assets/earth.png"
+      image: "../assets/earth.png"
     },
     {
       name: "Mars",
@@ -77,7 +77,7 @@ export class PlanetsComponent implements OnInit {
       livability:
         "At this time, Mars' surface cannot support life as we know it. Current missions are determining Mars' past and future potential for life.",
       moons: "Mars has two moons named Phobos and Deimos.",
-      image: "src/assets/mars.png"
+      image: "../assets/mars.png"
     },
     {
       name: "Jupiter",
@@ -95,7 +95,7 @@ export class PlanetsComponent implements OnInit {
       livability:
         "Jupiter cannot support life as we know it. But some of Jupiter's moons have oceans beneath their crusts that might support life.",
       moons: "Jupiter has more than 75 moons.",
-      image: "src/assets/jupiter.png"
+      image: "../assets/jupiter.png"
     },
     {
       name: "Saturn",
@@ -132,7 +132,7 @@ export class PlanetsComponent implements OnInit {
       livability: "Uranus cannot support life as we know it.",
       moons:
         "Uranus has 27 known moons, and they are named after characters from the works of William Shakespeare and Alexander Pope.",
-      image: "src/assets/uranus.png"
+      image: "../assets/uranus.png"
     },
     {
       name: "Neptune",
@@ -150,13 +150,13 @@ export class PlanetsComponent implements OnInit {
       livability: "Neptune cannot support life as we know it.",
       moons:
         "Neptune has 14 known moons which are named after sea gods and nymphs in Greek mythology.",
-      image: "src/assets/uranus.png"
+      image: "../assets/uranus.png"
     }
   ];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   showPlanetInfo(index: number) {
     console.log(this.planets[index]);
