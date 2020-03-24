@@ -159,6 +159,7 @@ export class PlanetsComponent implements OnInit {
   ngOnInit(): void {}
 
   showPlanetInfo(index: number) {
+    
     console.log(this.planets[index]);
   }
 }

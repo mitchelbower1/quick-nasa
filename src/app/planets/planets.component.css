@@ -9,8 +9,9 @@ section {
 }
 p {
   color: white;
+  padding: 5px;
+  margin: 10px;
 }
-
 
 img {
   height: 200px;
