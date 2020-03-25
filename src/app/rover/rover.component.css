@@ -1,0 +1,54 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "play";
+  font-size: 28px;
+  color: white;
+}
+
+.form-container {
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: black;
+  width: 50%;
+  padding: 5px;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Play";
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.7);
+}
+select {
+  padding: 5px;
+  border-radius: 2px;
+  margin: 5px;
+  font-family: "Play";
+  font-size: 19px;
+}
+label {
+  font-size: 20px;
+}
+input {
+  padding: 5px;
+  border-radius: 2px;
+  margin: 5px;
+  font-family: "Play";
+  font-size: 18px;
+}
+.imageBox {
+  display: flex;
+}
+image {
+  height: 400px;
+  width: 400px;
+}

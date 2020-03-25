@@ -1,8 +1,9 @@
 <main>
+  <h1>Explore Mars Rover</h1>
   <div class="form-container">
     <form #roverForm="ngForm" (ngSubmit)="getRoverImage(roverForm)">
       <label for="rover">Rover</label>
-      <select id="rover" name="rover" ngModel>
+      <select id="rover" name="rover" placeholder="Choose Rover" ngModel>
         <option value="curiosity">Curiosity</option>
         <option value="opportunity">Opportunity</option>
         <option value="spirit">Spirit</option>
@@ -20,7 +21,8 @@
     </form>
   </div>
 
-  <div *ngFor="let image of roverImages; index as i">
+  <div class="imageBox" *ngFor="let image of roverImages; index as i">
     <img src="{{ image.img_src }}" alt="" />
+    <!-- <div>{{ image.photos[i].camera.full_name }}</div> -->
   </div>
 </main>
