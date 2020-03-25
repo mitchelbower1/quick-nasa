@@ -1,4 +1,4 @@
-body{
+body {
   display: flex;
 }
 section {
@@ -11,6 +11,11 @@ section {
   width: 100%;
 }
 
+.modal-content {
+  height: 400px;
+  width: 80%;
+  background-color: skyblue;
+}
 .modal {
   display: none;
   height: 0;
@@ -18,10 +23,15 @@ section {
 }
 
 .modal.show {
-  display: block;
-  height: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
-  background-color: rosybrown;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 p {
@@ -37,13 +47,13 @@ p {
   /* justify-content: center; */
   left: 100px;
 }
-.solar{
+.solar {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.information{
+.information {
   border: 1px solid blue;
 }
 /* @media only screen and (min-width: 768px) {

@@ -1,18 +1,21 @@
 <app-header></app-header>
 <main>
   <div>
-    <div class="modal" [ngClass]="{ show: showModal }">
-      <p>Name: {{ currentPlanet?.name }}</p>
-      <p>Planet Type: {{ currentPlanet?.planetType }}</p>
-      <p>Size: {{ currentPlanet?.size }}</p>
-      <p>Orbit: {{ currentPlanet?.orbit }}</p>
-      <p>Surface: {{ currentPlanet?.surface }}</p>
-      <p>Atmosphere: {{ currentPlanet?.atmosphere }}</p>
-      <p>Livability: {{ currentPlanet?.livability }}</p>
-      <p>Moons: {{ currentPlanet?.moons }}</p>
-    </div>
     <div *ngFor="let planet of planets; index as i">
       <img src="{{ planet.image }}" alt="" (click)="showPlanetInfo(i)" />
+    </div>
+    <div class="modal" [ngClass]="{ show: showModal }">
+      <div class="modal-content">
+        <button (click)="hidePlanetInfo()">Close</button>
+        <p>Name: {{ currentPlanet?.name }}</p>
+        <p>Planet Type: {{ currentPlanet?.planetType }}</p>
+        <p>Size: {{ currentPlanet?.size }}</p>
+        <p>Orbit: {{ currentPlanet?.orbit }}</p>
+        <p>Surface: {{ currentPlanet?.surface }}</p>
+        <p>Atmosphere: {{ currentPlanet?.atmosphere }}</p>
+        <p>Livability: {{ currentPlanet?.livability }}</p>
+        <p>Moons: {{ currentPlanet?.moons }}</p>
+      </div>
     </div>
   </div>
 </main>
