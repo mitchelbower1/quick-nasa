@@ -47,8 +47,17 @@ export class NASAService {
         api_key: this.api_key
       }
     });
-    
   }
-  
- 
+
+  getRoverImage(date: string = "2015-03-13", rover: string = "curiosity") {
+    return this.http.get(
+      `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos`,
+      {
+        params: {
+          api_key: this.api_key,
+          earth_date: date
+        }
+      }
+    );
+  }
 }

@@ -6,6 +6,7 @@ import { HomeComponent } from "./home/home.component";
 import { EpicComponent } from "./epic/epic.component";
 import { NewsComponent } from "./news/news.component";
 import { PlanetsComponent } from "./planets/planets.component";
+import { RoverComponent } from "./rover/rover.component";
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: "news", component: NewsComponent },
   { path: "epic", component: EpicComponent },
   { path: "footer", component: FooterComponent },
-  { path: "planets", component: PlanetsComponent }
+  { path: "planets", component: PlanetsComponent },
+  { path: "rover", component: RoverComponent }
 ];
 
 @NgModule({

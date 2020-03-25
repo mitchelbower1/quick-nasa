@@ -10,6 +10,7 @@ import { EpicComponent } from "./epic/epic.component";
 import { FooterComponent } from "./footer/footer.component";
 import { FormsModule } from "@angular/forms";
 import { PlanetsComponent } from "./planets/planets.component";
+import { RoverComponent } from './rover/rover.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PlanetsComponent } from "./planets/planets.component";
     NewsComponent,
     EpicComponent,
     FooterComponent,
-    PlanetsComponent
+    PlanetsComponent,
+    RoverComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

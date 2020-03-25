@@ -1,0 +1,24 @@
+<main>
+  <h2>THE CHUB STARTS HERE</h2>
+  <div class="form-container">
+    <form #roverForm="ngForm" (ngSubmit)="getRoverImage(roverForm)">
+      <label for="rover">Rover</label>
+      <select id="“rover”" name="“rover”">
+        <option value="“curiosity”">Curiosity</option>
+        <option value="“opportunity”">Opportunity</option>
+        <option value="“spirit”">Spirit</option>
+      </select>
+
+      <label for="startDate">Start Date</label>
+      <input
+        type="date"
+        id="startDate"
+        name="startDateTime"
+        placeholder="Enter your start date"
+        ngModel
+      />
+
+      <button>Submit</button>
+    </form>
+  </div>
+</main>

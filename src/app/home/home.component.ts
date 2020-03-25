@@ -13,6 +13,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.getPictureOfTheDay();
+    this.service.getRoverImage().subscribe(response=> {
+      console.log(response)
+    })
   }
 
   getPictureOfTheDay() {
