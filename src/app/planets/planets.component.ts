@@ -114,7 +114,7 @@ export class PlanetsComponent implements OnInit {
         "Saturn cannot support life as we know it, but some of Saturn's moons have conditions that might support life.",
       moons:
         "Saturn has 53 known moons with an additional 29 moons awaiting confirmation of their discovery—that is a total of 82 moons.",
-      image: "../assets/mercury.jpg"
+      image: "../assets/saturn.png"
     },
     {
       name: "Uranus",
@@ -156,10 +156,9 @@ export class PlanetsComponent implements OnInit {
 
   showModal: boolean = false;
   currentPlanet: Planets;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
-
+  ngOnInit(): void {}
 
   showPlanetInfo(index: number) {
     this.showModal = true;

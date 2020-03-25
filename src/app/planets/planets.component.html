@@ -6,7 +6,9 @@
     </div>
     <div class="modal" [ngClass]="{ show: showModal }">
       <div class="modal-content">
-        <button (click)="hidePlanetInfo()">Close</button>
+        <button (click)="hidePlanetInfo()">
+          <i class="far fa-times-circle"></i>
+        </button>
         <p>Name: {{ currentPlanet?.name }}</p>
         <p>Planet Type: {{ currentPlanet?.planetType }}</p>
         <p>Size: {{ currentPlanet?.size }}</p>
