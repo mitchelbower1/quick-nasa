@@ -165,4 +165,9 @@ export class PlanetsComponent implements OnInit {
     this.showModal = true;
     this.currentPlanet = this.planets[index];
   }
+
+  hidePlanetInfo(index: number) {
+    this.showModal = false;
+    this.currentPlanet = this.planets[index];
+  }
 }

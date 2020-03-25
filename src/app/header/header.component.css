@@ -4,8 +4,8 @@ body {
 }
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
 }
 .navbar {
   display: flex;
@@ -26,11 +26,13 @@ body {
   width: 100%;
   /* align-items: center; */
 }
-h3{
+h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
@@ -39,6 +41,7 @@ a {
 
 ul {
   display: none;
+  margin-top: 45px;
 }
 
 h1 {
@@ -49,6 +52,7 @@ h1 {
   background-color: #0b3d91;
   border: none;
   height: fit-content;
+  margin-top: 40px;
 }
 
 .fa-bars {
