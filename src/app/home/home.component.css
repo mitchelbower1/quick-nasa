@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   margin: 0;
 }
@@ -12,14 +14,43 @@ body {
 }
 
 img {
-  height: 50%;
-  width: 50%;
-  margin-bottom: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .title {
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: "Play", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   margin: 10px;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: black;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+  }
+  
+  img {
+    height: 50%;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    color: white;
+    font-family: "Play", sans-serif;
+    font-size: 36px;
+    margin: 10px;
+  }
+
 }
