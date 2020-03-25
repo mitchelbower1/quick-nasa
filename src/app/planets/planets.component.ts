@@ -154,12 +154,15 @@ export class PlanetsComponent implements OnInit {
     }
   ];
 
+  showModal: boolean = false;
+  currentPlanet: Planets;
   constructor() { }
 
   ngOnInit(): void { }
 
+
   showPlanetInfo(index: number) {
-    
-    console.log(this.planets[index]);
+    this.showModal = true;
+    this.currentPlanet = this.planets[index];
   }
 }

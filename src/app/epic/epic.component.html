@@ -1,7 +1,13 @@
 <app-header></app-header>
 
 <div *ngFor="let image of images; index as i">
-    <img src="{{image.url}}" alt="">
+  <div class="container">
+    <img src="{{ image.url }}" alt="" />
+    <div>
+      These images were taken by NASA's EPIC camera onboard the NOAA DSCOVR
+      spacecraft.
+    </div>
+  </div>
 </div>
 
 <app-footer></app-footer>
