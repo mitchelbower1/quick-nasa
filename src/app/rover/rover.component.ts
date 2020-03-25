@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { NASAService } from "../nasa.service";
 import { NgForm } from "@angular/forms";
+import { PathLocationStrategy } from "@angular/common";
 
 @Component({
   selector: "app-rover",
@@ -8,18 +9,20 @@ import { NgForm } from "@angular/forms";
   styleUrls: ["./rover.component.css"]
 })
 export class RoverComponent implements OnInit {
-  roverImage: any;
+  roverImages: any;
 
   constructor(private service: NASAService) {}
 
   ngOnInit(): void {}
 
   getRoverImage(form: NgForm) {
+    console.log(form.value);
     this.service
-      .getRoverImage(form.value.rover, form.value.date)
+      .getRoverImage(form.value.date, form.value.rover)
       .subscribe(response => {
-        this.roverImage = response;
-        console.log(response)
+        let test: any = response;
+        this.roverImages = test.photos;
+        console.log(response);
       });
   }
 }

@@ -1,24 +1,26 @@
 <main>
-  <h2>THE CHUB STARTS HERE</h2>
   <div class="form-container">
     <form #roverForm="ngForm" (ngSubmit)="getRoverImage(roverForm)">
       <label for="rover">Rover</label>
-      <select id="“rover”" name="“rover”">
-        <option value="“curiosity”">Curiosity</option>
-        <option value="“opportunity”">Opportunity</option>
-        <option value="“spirit”">Spirit</option>
+      <select id="rover" name="rover" ngModel>
+        <option value="curiosity">Curiosity</option>
+        <option value="opportunity">Opportunity</option>
+        <option value="spirit">Spirit</option>
       </select>
 
-      <label for="startDate">Start Date</label>
+      <label for="date">Date</label>
       <input
         type="date"
-        id="startDate"
-        name="startDateTime"
+        id="date"
+        name="date"
         placeholder="Enter your start date"
         ngModel
       />
-
       <button>Submit</button>
     </form>
+  </div>
+
+  <div *ngFor="let image of roverImages; index as i">
+    <img src="{{ image.img_src }}" alt="" />
   </div>
 </main>
