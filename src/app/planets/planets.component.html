@@ -1,7 +1,7 @@
 <app-header></app-header>
 <main>
   <div>
-    <div *ngFor="let planet of planets; index as i">
+    <div *ngFor="let planet of planets; index as i" class="planets">
       <img src="{{ planet.image }}" alt="" (click)="showPlanetInfo(i)" />
     </div>
     <div class="modal" [ngClass]="{ show: showModal }">
