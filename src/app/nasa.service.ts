@@ -18,7 +18,7 @@ export class NASAService {
   link: string = "";
 
   images: any[] = [];
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   //   rsFeed.load(baseUrl, function(err, rss){
   //     return this.http.get("https://www.nasa.gov/rss/dyn/earth.rss")
@@ -35,7 +35,7 @@ export class NASAService {
     return this.http.get(`https://api.nasa.gov/planetary/apod`, {
       params: {
         api_key: this.api_key,
-        date: "2020-03-22",//this.date,
+        date: this.date,
         hd: `${this.hd}`
       }
     });

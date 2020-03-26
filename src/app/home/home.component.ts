@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { NASAService } from "../nasa.service";
 import { HeaderComponent } from "../header/header.component";
+import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: "app-home",
@@ -9,13 +10,11 @@ import { HeaderComponent } from "../header/header.component";
 })
 export class HomeComponent implements OnInit {
   pictureOfTheDay: any;
-  constructor(private service: NASAService) { }
+  safeURL: any;
+  constructor(private service: NASAService, private _sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     this.getPictureOfTheDay();
-    this.service.getRoverImage().subscribe(response => {
-      console.log(response)
-    })
   }
 
   getPictureOfTheDay() {
@@ -24,13 +23,9 @@ export class HomeComponent implements OnInit {
       this.pictureOfTheDay = response;
     });
   }
-  getYoutubeURL(): any {
-
-    return `<iframe
-    src="${this.pictureOfTheDay?.url}"
-    frameborder="0"
-  ></iframe>`;
-
+  getSafeUrl() {
+    return this._sanitizer.bypassSecurityTrustResourceUrl(
+      this.pictureOfTheDay?.url
+    );
   }
-
 }

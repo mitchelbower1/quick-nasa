@@ -9,10 +9,10 @@
     alt="pic"
   />
 
-  <div
+  <iframe
     *ngIf="pictureOfTheDay?.media_type === 'video'"
-    [innerHTML]="getYoutubeURL()"
-  ></div>
+    [src]="getSafeUrl()"
+  ></iframe>
 </div>
 
 <app-footer></app-footer>
