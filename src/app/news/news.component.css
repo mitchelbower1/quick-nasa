@@ -2,6 +2,7 @@ h1 {
   font-size: 42px;
   color: Black;
   margin: 20px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,10 +40,8 @@ h1 {
   font-size: 18px;
 }
 a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
   border-radius: 10px;
   color: white;
   background-color: #fc3d21;
@@ -51,7 +50,6 @@ a {
   font-size: 18px;
   border: none;
   text-decoration: none;
-  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   h1 {

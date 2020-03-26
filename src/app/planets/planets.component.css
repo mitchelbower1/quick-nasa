@@ -9,8 +9,16 @@
   margin-bottom: 0px;
 }
 
+h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 15px;
+}
+
 .planet-container {
-  width: 100%;
+  width: 90%;
   display: block;
   padding: 10px;
   flex-wrap: wrap;
@@ -18,6 +26,7 @@
 
 .planets {
   padding: 10px;
+  padding-right: 0px;
   width: 100%;
 }
 
