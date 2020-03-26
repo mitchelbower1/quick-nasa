@@ -1,4 +1,6 @@
-<main>
+<app-header></app-header>
+
+<main class="main">
   <h1>Explore Mars Rover</h1>
   <div class="form-container">
     <form #roverForm="ngForm" (ngSubmit)="getRoverImage(roverForm)">
@@ -22,7 +24,10 @@
   </div>
 
   <div class="imageBox" *ngFor="let image of roverImages; index as i">
-    <img src="{{ image.img_src }}" alt="" />
-    <!-- <div>{{ image.photos[i].camera.full_name }}</div> -->
+    <div *ngIf="i < 10">
+      <img src="{{ image.img_src }}" alt="" />
+      <p class="info">{{ image.camera.full_name }}</p>
+    </div>
   </div>
 </main>
+<app-footer></app-footer>

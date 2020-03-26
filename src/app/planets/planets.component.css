@@ -1,13 +1,23 @@
-body {
-  display: flex;
-}
-section {
-  background: url("/assets/solar-system.jpg") no-repeat center fixed;
+.main {
+  background: url("/assets/starryBg.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+  width: 100vw;
+  margin-bottom: 0px;
+}
+
+.planet-container {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.planets {
+  padding: 10px;
   width: 100%;
 }
 
@@ -41,34 +51,23 @@ p {
   margin: 10px;
 }
 
-.sphere {
-  height: 200px;
-  width: 200px;
-  /* align-items: center; */
-  /* justify-content: center; */
-  left: 100px;
-}
-.solar {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
 .information {
   border: 1px solid blue;
 }
 @media only screen and (min-width: 768px) {
   main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .planets {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  .header {
+    color: white;
+    font-size: 30px;
+    font-family: "play";
   }
+
   section {
     background: url("/assets/solar-system.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
@@ -83,9 +82,11 @@ p {
     padding: 5px;
     margin: 10px;
   }
+  .planet-container {
+    display: flex;
+  }
 
-  img {
-    height: 200px;
-    width: 200px;
+  .planets {
+    max-width: calc(99.9% / 8);
   }
 }

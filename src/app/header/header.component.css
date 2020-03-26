@@ -13,9 +13,9 @@ body {
   flex-direction: column;
   padding-top: 0px;
   padding: 30px;
-  height: 40px;
   align-items: center;
   width: 100%;
+  margin-left: 5px;
   font-family: "Play", sans-serif;
   background-color: #0b3d91;
 }
@@ -31,7 +31,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
   font-size: 20px;
 }
 a {
@@ -41,7 +40,6 @@ a {
 
 ul {
   display: none;
-  margin-top: 45px;
 }
 
 h1 {
@@ -51,8 +49,6 @@ h1 {
 .mobile {
   background-color: #0b3d91;
   border: none;
-  height: fit-content;
-  margin-top: 40px;
 }
 
 .fa-bars {
@@ -75,7 +71,6 @@ h1 {
     justify-content: space-between;
     flex-direction: row;
     padding: 0 50px;
-    height: 70px;
     align-items: baseline;
     background-color: #0b3d91;
   }
@@ -88,7 +83,6 @@ h1 {
     color: #fc3d21;
   }
   .button {
-    margin: 5px;
     border-radius: 10px;
     display: initial;
   }

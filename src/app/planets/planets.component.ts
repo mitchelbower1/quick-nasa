@@ -114,7 +114,7 @@ export class PlanetsComponent implements OnInit {
         "Saturn cannot support life as we know it, but some of Saturn's moons have conditions that might support life.",
       moons:
         "Saturn has 53 known moons with an additional 29 moons awaiting confirmation of their discovery—that is a total of 82 moons.",
-      image: "../assets/saturn.png"
+      image: "../assets/saturnlv.png"
     },
     {
       name: "Uranus",
