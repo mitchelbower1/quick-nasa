@@ -15,16 +15,19 @@ h2 {
   justify-content: center;
   margin-top: 0;
   padding-top: 15px;
-  font-size: 52px;
+  font-size: 38px;
+  margin: 15px;
 }
 
 h4 {
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 0;
   padding-top: 15px;
-  font-size: 38px;
+  font-size: 24px;
+  margin: 15px;
 }
 
 .planet-container {
@@ -43,7 +46,7 @@ h4 {
 .modal-content {
   height: 80%;
   width: 80%;
-  background-color: skyblue;
+  background-color: rgba(111, 103, 146, 0.7);
   border-radius: 10px;
   overflow-y: scroll;
 }
@@ -70,11 +73,46 @@ p {
   padding: 5px;
   margin: 10px;
 }
+.name {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fc3d21;
+}
 
 .information {
   border: 1px solid blue;
 }
+
+i {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
 @media only screen and (min-width: 768px) {
+  h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 15px;
+    font-size: 52px;
+    margin: 15px;
+  }
+  .name {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fc3d21;
+  }
+  h4 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 15px;
+    font-size: 38px;
+    margin: 15px;
+  }
   main {
     display: flex;
     flex-direction: column;
@@ -93,7 +131,7 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
   p {

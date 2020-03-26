@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   padding-top: 0px;
-  padding: 30px;
+  padding: 15px;
   align-items: center;
   width: 100%;
   font-family: "Play", sans-serif;
@@ -67,6 +67,16 @@ h1 {
   font-size: 24px;
   z-index: 99;
 }
+.logo {
+  display: flex;
+  align-items: baseline;
+  font-size: 24px;
+  color: white;
+}
+
+.cadet {
+  color: #fc3d21;
+}
 
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -77,10 +87,7 @@ h1 {
     align-items: baseline;
     background-color: #0b3d91;
   }
-  .logo {
-    display: flex;
-    align-items: baseline;
-  }
+
   a {
     text-decoration: none;
     color: #fc3d21;

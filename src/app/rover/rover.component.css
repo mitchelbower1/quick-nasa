@@ -16,12 +16,10 @@
 
 h1 {
   font-family: "play";
-  font-size: 28px;
+  font-size: 38px;
   color: white;
-}
-
-.info {
-  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.7);
 }
 
 .form-container {
@@ -92,12 +90,14 @@ img {
   width: 75%;
 }
 
-.sol {
+.info {
+  font-size: 20px;
   color: white;
 }
 
 .nothing {
   color: white;
+  font-size: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -117,8 +117,10 @@ img {
 
   h1 {
     font-family: "play";
-    font-size: 28px;
+    font-size: 52px;
     color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.7);
   }
 
   .info {

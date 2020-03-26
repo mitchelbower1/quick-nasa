@@ -49,7 +49,7 @@ export class NASAService {
     });
   }
 
-  getRoverImage(date: string = "2015-03-13", rover: string = "curiosity") {
+  getRoverImage(date: string = "2019-01-19", rover: string = "curiosity") {
     return this.http.get(
       `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos`,
       {

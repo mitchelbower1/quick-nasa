@@ -6,7 +6,7 @@
     <form #roverForm="ngForm" (ngSubmit)="getRoverImage(roverForm)">
       <label for="rover">Rover</label>
       <select id="rover" name="rover" placeholder="Choose Rover" ngModel>
-        <option value="curiosity">Curiosity</option>
+        <option value="curiosity" selected="selected">Curiosity</option>
         <option value="opportunity">Opportunity</option>
         <option value="spirit">Spirit</option>
       </select>
@@ -16,20 +16,21 @@
         type="date"
         id="date"
         name="date"
+        value="2019-01-19"
+        min="1971-01-01"
         placeholder="Enter your start date"
         ngModel
       />
       <button>Submit</button>
     </form>
   </div>
-  <p class="nothing" *ngIf="!roverImages">No photos on this day</p>
+  <p class="nothing" *ngIf="roverImages.length == 0">No photos on this day</p>
 
   <div class="imageBox" *ngFor="let image of roverImages; index as i">
     <div class="ngIf" *ngIf="i < 10">
       <img src="{{ image.img_src }}" alt="" />
       <p class="info">{{ image.camera.full_name }}</p>
-      <p class="sol">SOL(Martian day): {{ image.rover.max_sol }}</p>
+      <p class="info">SOL(Martian day): {{ image.rover.max_sol }}</p>
     </div>
   </div>
 </main>
-<app-footer></app-footer>

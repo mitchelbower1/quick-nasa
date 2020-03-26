@@ -10,7 +10,6 @@ body {
   overflow: hidden;
   padding: 10px 0px;
   background-color: #0b3d91;
-
 }
 
 .card {
@@ -33,10 +32,9 @@ body {
   overflow: hidden;
   position: relative;
   display: flex;
-  flex-direction: row;    
+  flex-direction: row;
   animation: ticker 100s linear infinite;
   background-color: #0b3d91;
-
 }
 
 @keyframes ticker {
@@ -63,25 +61,23 @@ body {
     width: 100%;
   }
 
-
-
   .headline {
     display: flex;
     flex-direction: row;
     font-family: ‘Play’, sans-serif;
     width: 100%;
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     padding: 5px;
   }
 
   .ticker {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 25vw;
     overflow: hidden;
     position: relative;
-    animation: ticker 100s linear infinite;
+    animation: ticker 45s linear infinite;
     background-color: #0b3d91;
   }
 

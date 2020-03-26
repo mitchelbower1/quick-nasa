@@ -1,18 +1,14 @@
 <body>
-  
+  <app-header></app-header>
 
-<app-header></app-header>
-
-<div class="main">
-  <section>
-    <h1>NASA NEWS</h1>
-    <div class="container" *ngFor="let item of feed.items; index as i">
-      <div class="title">{{ item.title }}</div>
-      <div class="description">{{ item.description }}</div>
-      <a href="{{ item.link }}" target="_blank">Learn More</a>
-    </div>
-  </section>
-</div>
-
-<app-footer></app-footer>
+  <div class="main">
+    <section>
+      <h1>NASA NEWS</h1>
+      <div class="container" *ngFor="let item of feed.items; index as i">
+        <div class="title">{{ item.title }}</div>
+        <div class="description">{{ item.description }}</div>
+        <a href="{{ item.link }}" target="_blank">Learn More</a>
+      </div>
+    </section>
+  </div>
 </body>

@@ -17,14 +17,20 @@
         <button (click)="hidePlanetInfo()">
           <i class="far fa-times-circle"></i>
         </button>
-        <p>Name: {{ currentPlanet?.name }}</p>
-        <p>Planet Type: {{ currentPlanet?.planetType }}</p>
-        <p>Size: {{ currentPlanet?.size }}</p>
-        <p>Orbit: {{ currentPlanet?.orbit }}</p>
-        <p>Surface: {{ currentPlanet?.surface }}</p>
-        <p>Atmosphere: {{ currentPlanet?.atmosphere }}</p>
-        <p>Livability: {{ currentPlanet?.livability }}</p>
-        <p>Moons: {{ currentPlanet?.moons }}</p>
+        <p><span class="name"> Name:</span> {{ currentPlanet?.name }}</p>
+        <p>
+          <span class="name">Planet Type:</span>{{ currentPlanet?.planetType }}
+        </p>
+        <p><span class="name">Size:</span> {{ currentPlanet?.size }}</p>
+        <p><span class="name">Orbit:</span> {{ currentPlanet?.orbit }}</p>
+        <p><span class="name">Surface:</span> {{ currentPlanet?.surface }}</p>
+        <p>
+          <span class="name">Atmosphere:</span> {{ currentPlanet?.atmosphere }}
+        </p>
+        <p>
+          <span class="name">Livability:</span> {{ currentPlanet?.livability }}
+        </p>
+        <p><span class="name">Moons:</span> {{ currentPlanet?.moons }}</p>
       </div>
     </div>
   </div>
