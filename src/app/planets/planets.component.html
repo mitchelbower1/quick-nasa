@@ -1,9 +1,16 @@
 <app-header></app-header>
-<main class="main"> 
+<main class="main">
   <h2 class="header">MEET THE PLANETS</h2>
+  <h4>CLICK THE PLANETS TO FIND OUT MORE</h4>
   <div class="planet-container">
     <!-- <div *ngFor="let planet of planets; index as i" class="planets"> -->
-      <img *ngFor="let planet of planets; index as i" class="planets" src="{{ planet.image }}" alt="" (click)="showPlanetInfo(i)" />
+    <img
+      *ngFor="let planet of planets; index as i"
+      class="planets"
+      src="{{ planet.image }}"
+      alt=""
+      (click)="showPlanetInfo(i)"
+    />
     <!-- </div> -->
     <div class="modal" [ngClass]="{ show: showModal }">
       <div class="modal-content">

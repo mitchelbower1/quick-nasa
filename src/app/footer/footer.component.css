@@ -9,6 +9,8 @@ body {
   width: 100%;
   overflow: hidden;
   padding: 10px 0px;
+  background-color: #0b3d91;
+
 }
 
 .card {
@@ -31,7 +33,10 @@ body {
   overflow: hidden;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;    
+  animation: ticker 100s linear infinite;
+  background-color: #0b3d91;
+
 }
 
 @keyframes ticker {
@@ -58,8 +63,7 @@ body {
     width: 100%;
   }
 
-  .card {
-  }
+
 
   .headline {
     display: flex;
@@ -77,7 +81,7 @@ body {
     width: 100vw;
     overflow: hidden;
     position: relative;
-    animation: ticker 20s linear infinite;
+    animation: ticker 100s linear infinite;
     background-color: #0b3d91;
   }
 

@@ -15,6 +15,16 @@ h2 {
   justify-content: center;
   margin-top: 0;
   padding-top: 15px;
+  font-size: 52px;
+}
+
+h4 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 15px;
+  font-size: 38px;
 }
 
 .planet-container {
@@ -68,7 +78,6 @@ p {
   main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -78,8 +87,8 @@ p {
     font-family: "play";
   }
 
-  section {
-    background: url("/assets/solar-system.jpg") no-repeat center fixed;
+  .main {
+    background: url("/assets/starryBg.jpg") no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -94,9 +103,10 @@ p {
   }
   .planet-container {
     display: flex;
+    justify-content: center;
   }
 
   .planets {
-    max-width: calc(99.9% / 8);
+    max-width: calc(99.9% / 5);
   }
 }
