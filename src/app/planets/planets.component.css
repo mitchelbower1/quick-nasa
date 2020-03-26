@@ -31,10 +31,11 @@ h2 {
 }
 
 .modal-content {
-  height: 400px;
+  height: 80%;
   width: 80%;
   background-color: skyblue;
   border-radius: 10px;
+  overflow-y: scroll;
 }
 .modal {
   display: none;

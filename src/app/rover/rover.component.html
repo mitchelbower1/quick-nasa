@@ -22,11 +22,13 @@
       <button>Submit</button>
     </form>
   </div>
+  <p class="nothing" *ngIf="!roverImages">No photos on this day</p>
 
   <div class="imageBox" *ngFor="let image of roverImages; index as i">
-    <div *ngIf="i < 10">
+    <div class="ngIf" *ngIf="i < 10">
       <img src="{{ image.img_src }}" alt="" />
       <p class="info">{{ image.camera.full_name }}</p>
+      <p class="sol">SOL(Martian day): {{ image.rover.max_sol }}</p>
     </div>
   </div>
 </main>

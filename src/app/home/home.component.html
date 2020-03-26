@@ -3,7 +3,16 @@
 <div class="container">
   <h1>Astronomy Picture of the Day</h1>
   <div class="title">{{ pictureOfTheDay?.title }}</div>
-  <img [src]="pictureOfTheDay?.url" alt="pic" />
+  <img
+    *ngIf="pictureOfTheDay?.media_type === 'image'"
+    [src]="pictureOfTheDay?.url"
+    alt="pic"
+  />
+
+  <div
+    *ngIf="pictureOfTheDay?.media_type === 'video'"
+    [innerHTML]="getYoutubeURL()"
+  ></div>
 </div>
 
 <app-footer></app-footer>

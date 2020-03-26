@@ -1,8 +1,9 @@
 h1 {
-  font-size: 42px;
-  color: Black;
+  font-size: 52px;
+  color: black;
   margin: 20px;
-  margin-top: 0;
+  margin-top: 0px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +31,7 @@ h1 {
 .title {
   color: white;
   font-size: 28px;
+  font-weight: bolder;
   margin-bottom: 10px;
 }
 
@@ -57,7 +59,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 42px;
+    font-size: 52px;
+    font-weight: bolder;
     color: black;
     margin: 20px;
   }
@@ -112,5 +115,7 @@ a {
     border: none;
     text-decoration: none;
     width: 30%;
+    align-items: center;
+    margin-left: 35%;
   }
 }

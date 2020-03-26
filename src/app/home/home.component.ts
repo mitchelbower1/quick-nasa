@@ -9,11 +9,11 @@ import { HeaderComponent } from "../header/header.component";
 })
 export class HomeComponent implements OnInit {
   pictureOfTheDay: any;
-  constructor(private service: NASAService) {}
+  constructor(private service: NASAService) { }
 
   ngOnInit(): void {
     this.getPictureOfTheDay();
-    this.service.getRoverImage().subscribe(response=> {
+    this.service.getRoverImage().subscribe(response => {
       console.log(response)
     })
   }
@@ -24,4 +24,13 @@ export class HomeComponent implements OnInit {
       this.pictureOfTheDay = response;
     });
   }
+  getYoutubeURL(): any {
+
+    return `<iframe
+    src="${this.pictureOfTheDay?.url}"
+    frameborder="0"
+  ></iframe>`;
+
+  }
+
 }
